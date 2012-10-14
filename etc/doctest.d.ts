@@ -1,0 +1,1 @@
+declare function print(...msgs:any[]):void;
