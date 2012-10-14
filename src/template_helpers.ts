@@ -1,5 +1,3 @@
-/// <reference path="template"/>
-/// <reference path="template_tags"/>
 
 module Template {
 

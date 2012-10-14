@@ -1,5 +1,83 @@
 var Template;
 (function (Template) {
+    Template.VERSION = "1.1.3";
+    Template.attrHooks = {
+        "classname": "class",
+        "cname": "class",
+        "cls": "class"
+    };
+    function merge(target, source) {
+        for(var key in source) {
+            target[key] = source[key];
+        }
+        return target;
+    }
+    Template.merge = merge;
+    function toAttrs(attrs, prefix) {
+        if (typeof prefix === "undefined") { prefix = ""; }
+        var atts = "";
+        for(var key in attrs) {
+            var lKey = key.toLowerCase();
+            var keyName = (lKey in Template.attrHooks) ? Template.attrHooks[lKey] : key;
+            var value = attrs[key];
+
+            if(typeof value == "object") {
+                var newPrefix = keyName + '-';
+                newPrefix = (prefix == "") ? newPrefix : prefix + newPrefix;
+                atts += toAttrs(value, newPrefix);
+            } else {
+                atts += " " + prefix + keyName + '=' + JSON.stringify(String(value));
+            }
+        }
+        return atts;
+    }
+    Template.toAttrs = toAttrs;
+    function text() {
+        var children = [];
+        for (var _i = 0; _i < (arguments.length - 0); _i++) {
+            children[_i] = arguments[_i + 0];
+        }
+        return children.join('');
+    }
+    Template.text = text;
+    function tag(name, children) {
+        if (typeof children === "undefined") { children = []; }
+        var atts = (children.length > 0 && typeof children[0] == 'object') ? toAttrs(children.shift()) : "";
+        return "<" + name + atts + ">" + children.join('') + "</" + name + ">";
+    }
+    Template.tag = tag;
+    function shortTag(name, atts) {
+        if (typeof atts === "undefined") { atts = {
+        }; }
+        return "<" + name + toAttrs(atts) + "/>";
+    }
+    Template.shortTag = shortTag;
+})(Template || (Template = {}));
+
+var Template;
+(function (Template) {
+    function image(src, attrs) {
+        if (typeof attrs === "undefined") { attrs = {
+        }; }
+        return Template.shortTag('img', Template.merge(attrs, {
+            src: src
+        }));
+    }
+    Template.image = image;
+    function stylesheet(src, attrs) {
+        if (typeof attrs === "undefined") { attrs = {
+        }; }
+        return Template.shortTag('link', Template.merge(attrs, {
+            src: src,
+            rel: "stylesheet",
+            type: "text/css"
+        }));
+    }
+    Template.stylesheet = stylesheet;
+})(Template || (Template = {}));
+
+var Template;
+(function (Template) {
     var makeArray = Array.prototype.slice;
     function a() {
         return Template.tag('a', makeArray.call(arguments));
@@ -437,83 +515,5 @@ var Template;
         return Template.shortTag('param', atts);
     }
     Template.param = param;
-})(Template || (Template = {}));
-
-var Template;
-(function (Template) {
-    function image(src, attrs) {
-        if (typeof attrs === "undefined") { attrs = {
-        }; }
-        return Template.shortTag('img', Template.merge(attrs, {
-            src: src
-        }));
-    }
-    Template.image = image;
-    function stylesheet(src, attrs) {
-        if (typeof attrs === "undefined") { attrs = {
-        }; }
-        return Template.shortTag('link', Template.merge(attrs, {
-            src: src,
-            rel: "stylesheet",
-            type: "text/css"
-        }));
-    }
-    Template.stylesheet = stylesheet;
-})(Template || (Template = {}));
-
-var Template;
-(function (Template) {
-    Template.VERSION = "1.1.3";
-    Template.attrHooks = {
-        "classname": "class",
-        "cname": "class",
-        "cls": "class"
-    };
-    function merge(target, source) {
-        for(var key in source) {
-            target[key] = source[key];
-        }
-        return target;
-    }
-    Template.merge = merge;
-    function toAttrs(attrs, prefix) {
-        if (typeof prefix === "undefined") { prefix = ""; }
-        var atts = "";
-        for(var key in attrs) {
-            var lKey = key.toLowerCase();
-            var keyName = (lKey in Template.attrHooks) ? Template.attrHooks[lKey] : key;
-            var value = attrs[key];
-
-            if(typeof value == "object") {
-                var newPrefix = keyName + '-';
-                newPrefix = (prefix == "") ? newPrefix : prefix + newPrefix;
-                atts += toAttrs(value, newPrefix);
-            } else {
-                atts += " " + prefix + keyName + '=' + JSON.stringify(String(value));
-            }
-        }
-        return atts;
-    }
-    Template.toAttrs = toAttrs;
-    function text() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        return children.join('');
-    }
-    Template.text = text;
-    function tag(name, children) {
-        if (typeof children === "undefined") { children = []; }
-        var atts = (children.length > 0 && typeof children[0] == 'object') ? toAttrs(children.shift()) : "";
-        return "<" + name + atts + ">" + children.join('') + "</" + name + ">";
-    }
-    Template.tag = tag;
-    function shortTag(name, atts) {
-        if (typeof atts === "undefined") { atts = {
-        }; }
-        return "<" + name + toAttrs(atts) + "/>";
-    }
-    Template.shortTag = shortTag;
 })(Template || (Template = {}));
 

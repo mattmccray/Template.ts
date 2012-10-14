@@ -74,3 +74,9 @@ print( Template.div({ data:{ focus:true, name:"test", enabled:false } }, "Test")
 
 print( Template.div({ data:{ focus:true, user:{ name:'test' } } }, "Test") )
 // => <div data-focus="true" data-user-name="test">Test</div>
+
+
+// == SECTION Class
+var view= new Template.MyView()
+print( view.render() )
+// => <div class="my-view"><p>MyView</p></div>

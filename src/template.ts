@@ -1,6 +1,4 @@
-/// <reference path="template_tags"/>
-/// <reference path="template_helpers"/>
-
+// template.ts 1.1.3 <https://github.com/darthapo/template.ts>
 module Template {
 
   export var VERSION:string = "1.1.3"

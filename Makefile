@@ -6,7 +6,7 @@ SOURCE_FILES= \
 	src/template_tags.ts
 
 compile: $(SOURCE_FILES)
-	tsc --out template.js src/template.ts
+	tsc --out template.js $(SOURCE_FILES)
 
 test_build:
 	tsc -c test/*.ts

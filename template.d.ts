@@ -7,10 +7,10 @@ module Template {
     export function shortTag(name:string, atts?: any): string;
     export function merge(target: any, source: any): any;
     export function toAttrs(attrs: any, prefix?: string): string;
-    // template_helpers
+    // helpers
     export function image(src: string, attrs?: any): string;
     export function stylesheet(src: string, attrs?: any): string;
-    // template_tags
+    // tags
     export function a(...children: any[]): string;
     export function abbr(...children: any[]): string;
     export function address(...children: any[]): string;
