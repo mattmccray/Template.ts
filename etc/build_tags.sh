@@ -9,16 +9,17 @@ short_tags="br hr img input link meta param"
 
 # Build the .ts contents... (for src/template_tags.ts)
 
-echo "module $module_name {
+echo "// This file is generated (from etc/build_tags.sh)
+
+module $module_name {
 
 // Full Tags:"
 
 for tag in $full_tags
 do
 echo "
-  export function $tag(...children:any[]):string {
-    children.unshift('$tag');
-    return tag.apply(tag, children);
+  export function $tag():string {
+    return tag('$tag', Array.prototype.slice.call(arguments));
   }"
 done
 

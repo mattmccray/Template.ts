@@ -30,9 +30,9 @@ module Template {
     }
 
     export function custom_widget(...children:string[]):string {
-      return tag('widget', { cls:'widget' },
+      return tag('widget', [{ cls:'widget' },
         children.join('')
-      );
+      ]);
     }
 
     export function my_widget():string {

@@ -42,9 +42,12 @@ var Template;
             for (var _i = 0; _i < (arguments.length - 0); _i++) {
                 children[_i] = arguments[_i + 0];
             }
-            return Template.tag('widget', {
-                cls: 'widget'
-            }, children.join(''));
+            return Template.tag('widget', [
+                {
+                    cls: 'widget'
+                }, 
+                children.join('')
+            ]);
         }
         Deeper.custom_widget = custom_widget;
         function my_widget() {

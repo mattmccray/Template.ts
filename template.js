@@ -1,921 +1,411 @@
 var Template;
 (function (Template) {
     function a() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('a');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('a', Array.prototype.slice.call(arguments));
     }
     Template.a = a;
     function abbr() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('abbr');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('abbr', Array.prototype.slice.call(arguments));
     }
     Template.abbr = abbr;
     function address() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('address');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('address', Array.prototype.slice.call(arguments));
     }
     Template.address = address;
     function area() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('area');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('area', Array.prototype.slice.call(arguments));
     }
     Template.area = area;
     function article() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('article');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('article', Array.prototype.slice.call(arguments));
     }
     Template.article = article;
     function aside() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('aside');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('aside', Array.prototype.slice.call(arguments));
     }
     Template.aside = aside;
     function audio() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('audio');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('audio', Array.prototype.slice.call(arguments));
     }
     Template.audio = audio;
     function b() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('b');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('b', Array.prototype.slice.call(arguments));
     }
     Template.b = b;
     function base() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('base');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('base', Array.prototype.slice.call(arguments));
     }
     Template.base = base;
     function bdi() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('bdi');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('bdi', Array.prototype.slice.call(arguments));
     }
     Template.bdi = bdi;
     function bdo() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('bdo');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('bdo', Array.prototype.slice.call(arguments));
     }
     Template.bdo = bdo;
     function blockquote() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('blockquote');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('blockquote', Array.prototype.slice.call(arguments));
     }
     Template.blockquote = blockquote;
     function body() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('body');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('body', Array.prototype.slice.call(arguments));
     }
     Template.body = body;
     function button() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('button');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('button', Array.prototype.slice.call(arguments));
     }
     Template.button = button;
     function canvas() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('canvas');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('canvas', Array.prototype.slice.call(arguments));
     }
     Template.canvas = canvas;
     function caption() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('caption');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('caption', Array.prototype.slice.call(arguments));
     }
     Template.caption = caption;
     function cite() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('cite');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('cite', Array.prototype.slice.call(arguments));
     }
     Template.cite = cite;
     function code() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('code');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('code', Array.prototype.slice.call(arguments));
     }
     Template.code = code;
     function col() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('col');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('col', Array.prototype.slice.call(arguments));
     }
     Template.col = col;
     function colgroup() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('colgroup');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('colgroup', Array.prototype.slice.call(arguments));
     }
     Template.colgroup = colgroup;
     function command() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('command');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('command', Array.prototype.slice.call(arguments));
     }
     Template.command = command;
     function data() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('data');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('data', Array.prototype.slice.call(arguments));
     }
     Template.data = data;
     function datalist() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('datalist');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('datalist', Array.prototype.slice.call(arguments));
     }
     Template.datalist = datalist;
     function dd() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('dd');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('dd', Array.prototype.slice.call(arguments));
     }
     Template.dd = dd;
     function del() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('del');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('del', Array.prototype.slice.call(arguments));
     }
     Template.del = del;
     function details() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('details');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('details', Array.prototype.slice.call(arguments));
     }
     Template.details = details;
     function dfn() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('dfn');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('dfn', Array.prototype.slice.call(arguments));
     }
     Template.dfn = dfn;
     function div() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('div');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('div', Array.prototype.slice.call(arguments));
     }
     Template.div = div;
     function dl() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('dl');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('dl', Array.prototype.slice.call(arguments));
     }
     Template.dl = dl;
     function dt() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('dt');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('dt', Array.prototype.slice.call(arguments));
     }
     Template.dt = dt;
     function em() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('em');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('em', Array.prototype.slice.call(arguments));
     }
     Template.em = em;
     function embed() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('embed');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('embed', Array.prototype.slice.call(arguments));
     }
     Template.embed = embed;
     function eventsource() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('eventsource');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('eventsource', Array.prototype.slice.call(arguments));
     }
     Template.eventsource = eventsource;
     function fieldset() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('fieldset');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('fieldset', Array.prototype.slice.call(arguments));
     }
     Template.fieldset = fieldset;
     function figcaption() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('figcaption');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('figcaption', Array.prototype.slice.call(arguments));
     }
     Template.figcaption = figcaption;
     function figure() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('figure');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('figure', Array.prototype.slice.call(arguments));
     }
     Template.figure = figure;
     function footer() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('footer');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('footer', Array.prototype.slice.call(arguments));
     }
     Template.footer = footer;
     function form() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('form');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('form', Array.prototype.slice.call(arguments));
     }
     Template.form = form;
     function h1() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h1');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h1', Array.prototype.slice.call(arguments));
     }
     Template.h1 = h1;
     function h2() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h2');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h2', Array.prototype.slice.call(arguments));
     }
     Template.h2 = h2;
     function h3() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h3');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h3', Array.prototype.slice.call(arguments));
     }
     Template.h3 = h3;
     function h4() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h4');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h4', Array.prototype.slice.call(arguments));
     }
     Template.h4 = h4;
     function h5() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h5');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h5', Array.prototype.slice.call(arguments));
     }
     Template.h5 = h5;
     function h6() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('h6');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('h6', Array.prototype.slice.call(arguments));
     }
     Template.h6 = h6;
     function head() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('head');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('head', Array.prototype.slice.call(arguments));
     }
     Template.head = head;
     function header() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('header');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('header', Array.prototype.slice.call(arguments));
     }
     Template.header = header;
     function hgroup() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('hgroup');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('hgroup', Array.prototype.slice.call(arguments));
     }
     Template.hgroup = hgroup;
     function html() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('html');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('html', Array.prototype.slice.call(arguments));
     }
     Template.html = html;
     function i() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('i');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('i', Array.prototype.slice.call(arguments));
     }
     Template.i = i;
     function iframe() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('iframe');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('iframe', Array.prototype.slice.call(arguments));
     }
     Template.iframe = iframe;
     function ins() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('ins');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('ins', Array.prototype.slice.call(arguments));
     }
     Template.ins = ins;
     function kbd() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('kbd');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('kbd', Array.prototype.slice.call(arguments));
     }
     Template.kbd = kbd;
     function keygen() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('keygen');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('keygen', Array.prototype.slice.call(arguments));
     }
     Template.keygen = keygen;
     function label() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('label');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('label', Array.prototype.slice.call(arguments));
     }
     Template.label = label;
     function legend() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('legend');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('legend', Array.prototype.slice.call(arguments));
     }
     Template.legend = legend;
     function li() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('li');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('li', Array.prototype.slice.call(arguments));
     }
     Template.li = li;
     function mark() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('mark');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('mark', Array.prototype.slice.call(arguments));
     }
     Template.mark = mark;
     function map() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('map');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('map', Array.prototype.slice.call(arguments));
     }
     Template.map = map;
     function menu() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('menu');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('menu', Array.prototype.slice.call(arguments));
     }
     Template.menu = menu;
     function meter() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('meter');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('meter', Array.prototype.slice.call(arguments));
     }
     Template.meter = meter;
     function nav() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('nav');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('nav', Array.prototype.slice.call(arguments));
     }
     Template.nav = nav;
     function noscript() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('noscript');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('noscript', Array.prototype.slice.call(arguments));
     }
     Template.noscript = noscript;
     function object() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('object');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('object', Array.prototype.slice.call(arguments));
     }
     Template.object = object;
     function ol() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('ol');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('ol', Array.prototype.slice.call(arguments));
     }
     Template.ol = ol;
     function optgroup() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('optgroup');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('optgroup', Array.prototype.slice.call(arguments));
     }
     Template.optgroup = optgroup;
     function option() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('option');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('option', Array.prototype.slice.call(arguments));
     }
     Template.option = option;
     function output() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('output');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('output', Array.prototype.slice.call(arguments));
     }
     Template.output = output;
     function p() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('p');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('p', Array.prototype.slice.call(arguments));
     }
     Template.p = p;
     function pre() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('pre');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('pre', Array.prototype.slice.call(arguments));
     }
     Template.pre = pre;
     function progress() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('progress');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('progress', Array.prototype.slice.call(arguments));
     }
     Template.progress = progress;
     function q() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('q');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('q', Array.prototype.slice.call(arguments));
     }
     Template.q = q;
     function ruby() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('ruby');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('ruby', Array.prototype.slice.call(arguments));
     }
     Template.ruby = ruby;
     function rp() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('rp');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('rp', Array.prototype.slice.call(arguments));
     }
     Template.rp = rp;
     function rt() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('rt');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('rt', Array.prototype.slice.call(arguments));
     }
     Template.rt = rt;
     function s() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('s');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('s', Array.prototype.slice.call(arguments));
     }
     Template.s = s;
     function samp() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('samp');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('samp', Array.prototype.slice.call(arguments));
     }
     Template.samp = samp;
     function script() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('script');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('script', Array.prototype.slice.call(arguments));
     }
     Template.script = script;
     function section() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('section');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('section', Array.prototype.slice.call(arguments));
     }
     Template.section = section;
     function select() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('select');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('select', Array.prototype.slice.call(arguments));
     }
     Template.select = select;
     function small() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('small');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('small', Array.prototype.slice.call(arguments));
     }
     Template.small = small;
     function source() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('source');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('source', Array.prototype.slice.call(arguments));
     }
     Template.source = source;
     function span() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('span');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('span', Array.prototype.slice.call(arguments));
     }
     Template.span = span;
     function strong() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('strong');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('strong', Array.prototype.slice.call(arguments));
     }
     Template.strong = strong;
     function style() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('style');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('style', Array.prototype.slice.call(arguments));
     }
     Template.style = style;
     function sub() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('sub');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('sub', Array.prototype.slice.call(arguments));
     }
     Template.sub = sub;
     function summary() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('summary');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('summary', Array.prototype.slice.call(arguments));
     }
     Template.summary = summary;
     function sup() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('sup');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('sup', Array.prototype.slice.call(arguments));
     }
     Template.sup = sup;
     function table() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('table');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('table', Array.prototype.slice.call(arguments));
     }
     Template.table = table;
     function tbody() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('tbody');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('tbody', Array.prototype.slice.call(arguments));
     }
     Template.tbody = tbody;
     function td() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('td');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('td', Array.prototype.slice.call(arguments));
     }
     Template.td = td;
     function textarea() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('textarea');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('textarea', Array.prototype.slice.call(arguments));
     }
     Template.textarea = textarea;
     function tfoot() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('tfoot');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('tfoot', Array.prototype.slice.call(arguments));
     }
     Template.tfoot = tfoot;
     function th() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('th');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('th', Array.prototype.slice.call(arguments));
     }
     Template.th = th;
     function thead() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('thead');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('thead', Array.prototype.slice.call(arguments));
     }
     Template.thead = thead;
     function time() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('time');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('time', Array.prototype.slice.call(arguments));
     }
     Template.time = time;
     function title() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('title');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('title', Array.prototype.slice.call(arguments));
     }
     Template.title = title;
     function tr() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('tr');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('tr', Array.prototype.slice.call(arguments));
     }
     Template.tr = tr;
     function track() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('track');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('track', Array.prototype.slice.call(arguments));
     }
     Template.track = track;
     function u() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('u');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('u', Array.prototype.slice.call(arguments));
     }
     Template.u = u;
     function ul() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('ul');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('ul', Array.prototype.slice.call(arguments));
     }
     Template.ul = ul;
     function video() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('video');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('video', Array.prototype.slice.call(arguments));
     }
     Template.video = video;
     function wbr() {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 0); _i++) {
-            children[_i] = arguments[_i + 0];
-        }
-        children.unshift('wbr');
-        return Template.tag.apply(Template.tag, children);
+        return Template.tag('wbr', Array.prototype.slice.call(arguments));
     }
     Template.wbr = wbr;
     function br(atts) {
@@ -1013,11 +503,8 @@ var Template;
         return children.join('');
     }
     Template.text = text;
-    function tag(name) {
-        var children = [];
-        for (var _i = 0; _i < (arguments.length - 1); _i++) {
-            children[_i] = arguments[_i + 1];
-        }
+    function tag(name, children) {
+        if (typeof children === "undefined") { children = []; }
         var atts = (children.length > 0 && typeof children[0] == 'object') ? toAttrs(children.shift()) : "";
         return "<" + name + atts + ">" + children.join('') + "</" + name + ">";
     }

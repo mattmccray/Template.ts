@@ -30,7 +30,8 @@ module Template {
     return children.join('');
   }
   
-  export function tag(name, ...children:any[]):string {
+  // TODO: Make children an array if it's not...
+  export function tag(name, children:any[]=[]):string {
     var atts= (children.length > 0 && typeof children[0] == 'object') ? toAttrs(children.shift()) : "";
     return "<"+ name + atts +">"+ children.join('') +"</"+ name +">";
   }
