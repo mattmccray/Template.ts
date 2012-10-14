@@ -1,4 +1,4 @@
-// Version 1.1.2
+// Version 1.1
 module Template {
     export var VERSION: string;
     export var attrHooks: any;
