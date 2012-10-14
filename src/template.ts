@@ -25,7 +25,9 @@ module Template {
           keyName = (lKey in attrHooks) ? attrHooks[lKey] : key,
           value = attrs[key];
       if(typeof value == "object") {
-        atts += toAttrs( value, keyName + '-' ); 
+        var newPrefix = keyName + '-';
+        newPrefix = (prefix == "") ? newPrefix : prefix + newPrefix;
+        atts += toAttrs( value, newPrefix ); 
       } else {
         atts += " "+ prefix + keyName + '='+ JSON.stringify( String(value) );  
       }

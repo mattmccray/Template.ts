@@ -65,3 +65,12 @@ print( Template.image('test.gif', { cls:'avatar' }) )
 print( Template.stylesheet('test.css') )
 // => <link src="test.css" rel="stylesheet" type="text/css"/>
 
+
+
+// == SECTION Nested Attributes
+
+print( Template.div({ data:{ focus:true, name:"test", enabled:false } }, "Test") )
+// => <div data-focus="true" data-name="test" data-enabled="false">Test</div>
+
+print( Template.div({ data:{ focus:true, user:{ name:'test' } } }, "Test") )
+// => <div data-focus="true" data-user-name="test">Test</div>
