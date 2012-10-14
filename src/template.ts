@@ -3,12 +3,19 @@
 
 module Template {
 
-  export var VERSION:string = "1.1.2"
+  export var VERSION:string = "1.1.3"
   
   export var attrHooks:any = {
     "classname": "class",
     "cname": "class",
     "cls": "class"
+  }
+
+  export function merge(target:any, source:any):any {
+    for(var key in source) {
+      target[key]= source[key];
+    }
+    return target;
   }
 
   export function toAttrs(attrs:any, prefix?:string = ""):string {

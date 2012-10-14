@@ -51,13 +51,15 @@ Or if you want to, you can nest your templates in submodules:
 module Template.AppViews {
   
   export function listView(id:string = "my_list", attrs?:any={}): string {
-    attrs.id = id;
-    attrs.cls = 'list-view';
+    merge(attrs, {
+      id: id,
+      cls: 'list-view'
+    });
     return ul(attrs);
   }
 
   export function listItem(label:string, attrs?:any={}):string {
-    attrs.cls = 'list-item'
+    merge(attrs, { cls: 'list-item' });
     return li(attrs,
       div({ cls:'label' }, label)
     );

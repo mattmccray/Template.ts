@@ -441,16 +441,10 @@ var Template;
 
 var Template;
 (function (Template) {
-    function merge(target, src) {
-        for(var key in src) {
-            target[key] = src[key];
-        }
-        return target;
-    }
     function image(src, attrs) {
         if (typeof attrs === "undefined") { attrs = {
         }; }
-        return Template.shortTag('img', merge(attrs, {
+        return Template.shortTag('img', Template.merge(attrs, {
             src: src
         }));
     }
@@ -458,7 +452,7 @@ var Template;
     function stylesheet(src, attrs) {
         if (typeof attrs === "undefined") { attrs = {
         }; }
-        return Template.shortTag('link', merge(attrs, {
+        return Template.shortTag('link', Template.merge(attrs, {
             src: src,
             rel: "stylesheet",
             type: "text/css"
@@ -469,12 +463,19 @@ var Template;
 
 var Template;
 (function (Template) {
-    Template.VERSION = "1.1.2";
+    Template.VERSION = "1.1.3";
     Template.attrHooks = {
         "classname": "class",
         "cname": "class",
         "cls": "class"
     };
+    function merge(target, source) {
+        for(var key in source) {
+            target[key] = source[key];
+        }
+        return target;
+    }
+    Template.merge = merge;
     function toAttrs(attrs, prefix) {
         if (typeof prefix === "undefined") { prefix = ""; }
         var atts = "";

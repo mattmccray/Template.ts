@@ -2,10 +2,11 @@
 module Template {
     export var VERSION: string;
     export var attrHooks: any;
-    export function toAttrs(attrs: any, prefix?: string): string;
     export function text(...children: any[]): string;
-    export function tag(name, children: any[]): string;
-    export function shortTag(name, atts?: any): string;
+    export function tag(name:string, children: any[]): string;
+    export function shortTag(name:string, atts?: any): string;
+    export function merge(target: any, source: any): any;
+    export function toAttrs(attrs: any, prefix?: string): string;
     // template_helpers
     export function image(src: string, attrs?: any): string;
     export function stylesheet(src: string, attrs?: any): string;
