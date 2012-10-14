@@ -30,10 +30,14 @@ module Template {
     // You can treat your exported template functions as custom tags:
     return layout(
       h2("Home Page"),
-      p("My homepage conent! ")
+      p("My homepage content!")
     );
   }
 }
+
+// Render by calling it:
+Template.home();
+// => <article><header><h1>My Page</h1></header><section id="main_content" class="content-area"><h2>Home Page</h2><p>My homepage content!</p></section><footer><p>&copy; me!</p></footer></article>
 ```
 
 You can render the template by calling the function (like, for example, in a `Backbone.View`):
