@@ -1,16 +1,17 @@
-// Version 1.1
 module Template {
     export var VERSION: string;
     export var attrHooks: any;
-    export function text(...children: any[]): string;
-    export function tag(name:string, children: any[]): string;
-    export function shortTag(name:string, atts?: any): string;
     export function merge(target: any, source: any): any;
     export function toAttrs(attrs: any, prefix?: string): string;
-    // helpers
+    export function text(...children: any[]): string;
+    export function tag(name, children?: any[]): string;
+    export function shortTag(name, atts?: any): string;
+}
+module Template {
     export function image(src: string, attrs?: any): string;
     export function stylesheet(src: string, attrs?: any): string;
-    // tags
+}
+module Template {
     export function a(...children: any[]): string;
     export function abbr(...children: any[]): string;
     export function address(...children: any[]): string;

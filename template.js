@@ -79,411 +79,411 @@ var Template;
 var Template;
 (function (Template) {
     var makeArray = Array.prototype.slice;
-    function a() {
+        function a() {
         return Template.tag('a', makeArray.call(arguments));
     }
     Template.a = a;
-    function abbr() {
+        function abbr() {
         return Template.tag('abbr', makeArray.call(arguments));
     }
     Template.abbr = abbr;
-    function address() {
+        function address() {
         return Template.tag('address', makeArray.call(arguments));
     }
     Template.address = address;
-    function area() {
+        function area() {
         return Template.tag('area', makeArray.call(arguments));
     }
     Template.area = area;
-    function article() {
+        function article() {
         return Template.tag('article', makeArray.call(arguments));
     }
     Template.article = article;
-    function aside() {
+        function aside() {
         return Template.tag('aside', makeArray.call(arguments));
     }
     Template.aside = aside;
-    function audio() {
+        function audio() {
         return Template.tag('audio', makeArray.call(arguments));
     }
     Template.audio = audio;
-    function b() {
+        function b() {
         return Template.tag('b', makeArray.call(arguments));
     }
     Template.b = b;
-    function base() {
+        function base() {
         return Template.tag('base', makeArray.call(arguments));
     }
     Template.base = base;
-    function bdi() {
+        function bdi() {
         return Template.tag('bdi', makeArray.call(arguments));
     }
     Template.bdi = bdi;
-    function bdo() {
+        function bdo() {
         return Template.tag('bdo', makeArray.call(arguments));
     }
     Template.bdo = bdo;
-    function blockquote() {
+        function blockquote() {
         return Template.tag('blockquote', makeArray.call(arguments));
     }
     Template.blockquote = blockquote;
-    function body() {
+        function body() {
         return Template.tag('body', makeArray.call(arguments));
     }
     Template.body = body;
-    function button() {
+        function button() {
         return Template.tag('button', makeArray.call(arguments));
     }
     Template.button = button;
-    function canvas() {
+        function canvas() {
         return Template.tag('canvas', makeArray.call(arguments));
     }
     Template.canvas = canvas;
-    function caption() {
+        function caption() {
         return Template.tag('caption', makeArray.call(arguments));
     }
     Template.caption = caption;
-    function cite() {
+        function cite() {
         return Template.tag('cite', makeArray.call(arguments));
     }
     Template.cite = cite;
-    function code() {
+        function code() {
         return Template.tag('code', makeArray.call(arguments));
     }
     Template.code = code;
-    function col() {
+        function col() {
         return Template.tag('col', makeArray.call(arguments));
     }
     Template.col = col;
-    function colgroup() {
+        function colgroup() {
         return Template.tag('colgroup', makeArray.call(arguments));
     }
     Template.colgroup = colgroup;
-    function command() {
+        function command() {
         return Template.tag('command', makeArray.call(arguments));
     }
     Template.command = command;
-    function data() {
+        function data() {
         return Template.tag('data', makeArray.call(arguments));
     }
     Template.data = data;
-    function datalist() {
+        function datalist() {
         return Template.tag('datalist', makeArray.call(arguments));
     }
     Template.datalist = datalist;
-    function dd() {
+        function dd() {
         return Template.tag('dd', makeArray.call(arguments));
     }
     Template.dd = dd;
-    function del() {
+        function del() {
         return Template.tag('del', makeArray.call(arguments));
     }
     Template.del = del;
-    function details() {
+        function details() {
         return Template.tag('details', makeArray.call(arguments));
     }
     Template.details = details;
-    function dfn() {
+        function dfn() {
         return Template.tag('dfn', makeArray.call(arguments));
     }
     Template.dfn = dfn;
-    function div() {
+        function div() {
         return Template.tag('div', makeArray.call(arguments));
     }
     Template.div = div;
-    function dl() {
+        function dl() {
         return Template.tag('dl', makeArray.call(arguments));
     }
     Template.dl = dl;
-    function dt() {
+        function dt() {
         return Template.tag('dt', makeArray.call(arguments));
     }
     Template.dt = dt;
-    function em() {
+        function em() {
         return Template.tag('em', makeArray.call(arguments));
     }
     Template.em = em;
-    function embed() {
+        function embed() {
         return Template.tag('embed', makeArray.call(arguments));
     }
     Template.embed = embed;
-    function eventsource() {
+        function eventsource() {
         return Template.tag('eventsource', makeArray.call(arguments));
     }
     Template.eventsource = eventsource;
-    function fieldset() {
+        function fieldset() {
         return Template.tag('fieldset', makeArray.call(arguments));
     }
     Template.fieldset = fieldset;
-    function figcaption() {
+        function figcaption() {
         return Template.tag('figcaption', makeArray.call(arguments));
     }
     Template.figcaption = figcaption;
-    function figure() {
+        function figure() {
         return Template.tag('figure', makeArray.call(arguments));
     }
     Template.figure = figure;
-    function footer() {
+        function footer() {
         return Template.tag('footer', makeArray.call(arguments));
     }
     Template.footer = footer;
-    function form() {
+        function form() {
         return Template.tag('form', makeArray.call(arguments));
     }
     Template.form = form;
-    function h1() {
+        function h1() {
         return Template.tag('h1', makeArray.call(arguments));
     }
     Template.h1 = h1;
-    function h2() {
+        function h2() {
         return Template.tag('h2', makeArray.call(arguments));
     }
     Template.h2 = h2;
-    function h3() {
+        function h3() {
         return Template.tag('h3', makeArray.call(arguments));
     }
     Template.h3 = h3;
-    function h4() {
+        function h4() {
         return Template.tag('h4', makeArray.call(arguments));
     }
     Template.h4 = h4;
-    function h5() {
+        function h5() {
         return Template.tag('h5', makeArray.call(arguments));
     }
     Template.h5 = h5;
-    function h6() {
+        function h6() {
         return Template.tag('h6', makeArray.call(arguments));
     }
     Template.h6 = h6;
-    function head() {
+        function head() {
         return Template.tag('head', makeArray.call(arguments));
     }
     Template.head = head;
-    function header() {
+        function header() {
         return Template.tag('header', makeArray.call(arguments));
     }
     Template.header = header;
-    function hgroup() {
+        function hgroup() {
         return Template.tag('hgroup', makeArray.call(arguments));
     }
     Template.hgroup = hgroup;
-    function html() {
+        function html() {
         return Template.tag('html', makeArray.call(arguments));
     }
     Template.html = html;
-    function i() {
+        function i() {
         return Template.tag('i', makeArray.call(arguments));
     }
     Template.i = i;
-    function iframe() {
+        function iframe() {
         return Template.tag('iframe', makeArray.call(arguments));
     }
     Template.iframe = iframe;
-    function ins() {
+        function ins() {
         return Template.tag('ins', makeArray.call(arguments));
     }
     Template.ins = ins;
-    function kbd() {
+        function kbd() {
         return Template.tag('kbd', makeArray.call(arguments));
     }
     Template.kbd = kbd;
-    function keygen() {
+        function keygen() {
         return Template.tag('keygen', makeArray.call(arguments));
     }
     Template.keygen = keygen;
-    function label() {
+        function label() {
         return Template.tag('label', makeArray.call(arguments));
     }
     Template.label = label;
-    function legend() {
+        function legend() {
         return Template.tag('legend', makeArray.call(arguments));
     }
     Template.legend = legend;
-    function li() {
+        function li() {
         return Template.tag('li', makeArray.call(arguments));
     }
     Template.li = li;
-    function mark() {
+        function mark() {
         return Template.tag('mark', makeArray.call(arguments));
     }
     Template.mark = mark;
-    function map() {
+        function map() {
         return Template.tag('map', makeArray.call(arguments));
     }
     Template.map = map;
-    function menu() {
+        function menu() {
         return Template.tag('menu', makeArray.call(arguments));
     }
     Template.menu = menu;
-    function meter() {
+        function meter() {
         return Template.tag('meter', makeArray.call(arguments));
     }
     Template.meter = meter;
-    function nav() {
+        function nav() {
         return Template.tag('nav', makeArray.call(arguments));
     }
     Template.nav = nav;
-    function noscript() {
+        function noscript() {
         return Template.tag('noscript', makeArray.call(arguments));
     }
     Template.noscript = noscript;
-    function object() {
+        function object() {
         return Template.tag('object', makeArray.call(arguments));
     }
     Template.object = object;
-    function ol() {
+        function ol() {
         return Template.tag('ol', makeArray.call(arguments));
     }
     Template.ol = ol;
-    function optgroup() {
+        function optgroup() {
         return Template.tag('optgroup', makeArray.call(arguments));
     }
     Template.optgroup = optgroup;
-    function option() {
+        function option() {
         return Template.tag('option', makeArray.call(arguments));
     }
     Template.option = option;
-    function output() {
+        function output() {
         return Template.tag('output', makeArray.call(arguments));
     }
     Template.output = output;
-    function p() {
+        function p() {
         return Template.tag('p', makeArray.call(arguments));
     }
     Template.p = p;
-    function pre() {
+        function pre() {
         return Template.tag('pre', makeArray.call(arguments));
     }
     Template.pre = pre;
-    function progress() {
+        function progress() {
         return Template.tag('progress', makeArray.call(arguments));
     }
     Template.progress = progress;
-    function q() {
+        function q() {
         return Template.tag('q', makeArray.call(arguments));
     }
     Template.q = q;
-    function ruby() {
+        function ruby() {
         return Template.tag('ruby', makeArray.call(arguments));
     }
     Template.ruby = ruby;
-    function rp() {
+        function rp() {
         return Template.tag('rp', makeArray.call(arguments));
     }
     Template.rp = rp;
-    function rt() {
+        function rt() {
         return Template.tag('rt', makeArray.call(arguments));
     }
     Template.rt = rt;
-    function s() {
+        function s() {
         return Template.tag('s', makeArray.call(arguments));
     }
     Template.s = s;
-    function samp() {
+        function samp() {
         return Template.tag('samp', makeArray.call(arguments));
     }
     Template.samp = samp;
-    function script() {
+        function script() {
         return Template.tag('script', makeArray.call(arguments));
     }
     Template.script = script;
-    function section() {
+        function section() {
         return Template.tag('section', makeArray.call(arguments));
     }
     Template.section = section;
-    function select() {
+        function select() {
         return Template.tag('select', makeArray.call(arguments));
     }
     Template.select = select;
-    function small() {
+        function small() {
         return Template.tag('small', makeArray.call(arguments));
     }
     Template.small = small;
-    function source() {
+        function source() {
         return Template.tag('source', makeArray.call(arguments));
     }
     Template.source = source;
-    function span() {
+        function span() {
         return Template.tag('span', makeArray.call(arguments));
     }
     Template.span = span;
-    function strong() {
+        function strong() {
         return Template.tag('strong', makeArray.call(arguments));
     }
     Template.strong = strong;
-    function style() {
+        function style() {
         return Template.tag('style', makeArray.call(arguments));
     }
     Template.style = style;
-    function sub() {
+        function sub() {
         return Template.tag('sub', makeArray.call(arguments));
     }
     Template.sub = sub;
-    function summary() {
+        function summary() {
         return Template.tag('summary', makeArray.call(arguments));
     }
     Template.summary = summary;
-    function sup() {
+        function sup() {
         return Template.tag('sup', makeArray.call(arguments));
     }
     Template.sup = sup;
-    function table() {
+        function table() {
         return Template.tag('table', makeArray.call(arguments));
     }
     Template.table = table;
-    function tbody() {
+        function tbody() {
         return Template.tag('tbody', makeArray.call(arguments));
     }
     Template.tbody = tbody;
-    function td() {
+        function td() {
         return Template.tag('td', makeArray.call(arguments));
     }
     Template.td = td;
-    function textarea() {
+        function textarea() {
         return Template.tag('textarea', makeArray.call(arguments));
     }
     Template.textarea = textarea;
-    function tfoot() {
+        function tfoot() {
         return Template.tag('tfoot', makeArray.call(arguments));
     }
     Template.tfoot = tfoot;
-    function th() {
+        function th() {
         return Template.tag('th', makeArray.call(arguments));
     }
     Template.th = th;
-    function thead() {
+        function thead() {
         return Template.tag('thead', makeArray.call(arguments));
     }
     Template.thead = thead;
-    function time() {
+        function time() {
         return Template.tag('time', makeArray.call(arguments));
     }
     Template.time = time;
-    function title() {
+        function title() {
         return Template.tag('title', makeArray.call(arguments));
     }
     Template.title = title;
-    function tr() {
+        function tr() {
         return Template.tag('tr', makeArray.call(arguments));
     }
     Template.tr = tr;
-    function track() {
+        function track() {
         return Template.tag('track', makeArray.call(arguments));
     }
     Template.track = track;
-    function u() {
+        function u() {
         return Template.tag('u', makeArray.call(arguments));
     }
     Template.u = u;
-    function ul() {
+        function ul() {
         return Template.tag('ul', makeArray.call(arguments));
     }
     Template.ul = ul;
-    function video() {
+        function video() {
         return Template.tag('video', makeArray.call(arguments));
     }
     Template.video = video;
-    function wbr() {
+        function wbr() {
         return Template.tag('wbr', makeArray.call(arguments));
     }
     Template.wbr = wbr;

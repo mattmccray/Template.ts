@@ -20,6 +20,7 @@ module $module_name {
 for tag in $full_tags
 do
 echo "
+  export function $tag(...children:any[]):string;
   export function $tag():string {
     return tag('$tag', makeArray.call(arguments));
   }"

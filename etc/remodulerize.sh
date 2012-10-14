@@ -12,12 +12,18 @@ fi
 
 filename=`echo $1 | tr '[A-Z]' '[a-z]' | tr '.' '_'`
 
-echo "Re-Modulerizing Template to $1 as $filename.ts"
+echo "Re-Modulerizing Template to $1 as $filename.ts..."
 
 cat src/template.ts src/template_helpers.ts src/template_tags.ts | sed s/Template/$1/ > $filename.ts
 echo " $filename.ts"
 
-cat template.d.ts | sed s/Template/$1/ > $filename.d.ts
+#cat template.d.ts | sed s/Template/$1/ > $filename.d.ts
+#echo " $filename.d.ts"
+
+echo "Compiling..."
+
+tsc --out $filename.js --declarations $filename.ts
 echo " $filename.d.ts"
+echo " $filename.js"
 
 echo "Done."

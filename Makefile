@@ -1,4 +1,4 @@
-.PHONY: test test_chrome test_build
+.PHONY: build_tags test test_chrome test_build
 
 SOURCE_FILES= \
 	src/template.ts \
@@ -6,9 +6,12 @@ SOURCE_FILES= \
 	src/template_tags.ts
 
 compile: $(SOURCE_FILES)
-	tsc --out template.js $(SOURCE_FILES)
+	tsc --out template.js --declarations $(SOURCE_FILES)
 
-test_build:
+build_tags:
+	sh etc/build_tags.sh > src/template_tags.ts
+
+test_build: compile
 	tsc -c test/*.ts
 
 test: test_build

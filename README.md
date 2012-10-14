@@ -81,40 +81,6 @@ module Template.AppViews {
 }
 ```
 
-## How it works
-
-Using TypeScript's module inference, you can omit the module name for exported functions within the module or submodule. Example:
-
-```javascript
-module Root {
-  export function helper() {
-    // This function is available externally as `Root.helper()`
-    // But any class/method/submodule under this module can 
-    // call it directly: `helper()` 
-    // (even from different source files)
-    return "helper";
-  }
-
-  export function use_helper() {
-    return helper(); // calls Root.helper()
-  }
-
-  class Test {
-    render() {
-      return helper(); // calls Root.helper()
-    }
-  }
-
-  export module Sub {
-    export function use_helper() {
-      return helper(); // calls Root.helper()
-    }
-  }
-
-  // ETC and so on...
-}
-```
-
 ## Customize the module name
 
 If you don't like the `Template` module name, or you want to put it in your own namespace you can use the `etc/remodulerize.sh` tool:
@@ -123,7 +89,10 @@ If you don't like the `Template` module name, or you want to put it in your own 
 sh etc/remodulerize.sh App.Views
 ```
 
-Given that example, it would create two files: `app_views.ts` and `app_views.d.ts` and changes the source from using `module Template` to using `module App.Views`.
+Given that example, it would create two files: `app_views.ts`, `app_views.d.ts`, and compiles to `app_views.js`. It changes the source from using `module Template` to using `module App.Views`.
+
+You can then include the js directly on your page and reference the declaration file in your source files, or just reference the `app_views.ts` directly in your sources files.
+
 
 ### Why you might want to do this
 
@@ -184,4 +153,39 @@ Template.attrHooks['jenable']= 'data-enabled'
 
 Template.div({ jenable:true });
 // => <div data-enabled="true"></div>
+```
+
+
+## How it works
+
+Using TypeScript's module inference, you can omit the module name for exported functions within the module or submodule. Example:
+
+```javascript
+module Root {
+  export function helper() {
+    // This function is available externally as `Root.helper()`
+    // But any class/method/submodule under this module can 
+    // call it directly: `helper()` 
+    // (even from different source files)
+    return "helper";
+  }
+
+  export function use_helper() {
+    return helper(); // calls Root.helper()
+  }
+
+  class Test {
+    render() {
+      return helper(); // calls Root.helper()
+    }
+  }
+
+  export module Sub {
+    export function use_helper() {
+      return helper(); // calls Root.helper()
+    }
+  }
+
+  // ETC and so on...
+}
 ```
