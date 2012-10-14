@@ -5,7 +5,7 @@ Simple, code based, template engine for TypeScript.
 
 Create your templates in the `Template` module:
 
-```typescript
+```javascript
 module Template {
   
   export function layout(...content:string[]):string {
@@ -33,7 +33,7 @@ module Template {
 
 Then, you can use it elsewhere (like, for example, a `Backbone.View`):
 
-```typescript
+```javascript
 module App.Views {
   
   class HomeView extends Backbone.View {
@@ -47,7 +47,7 @@ module App.Views {
 
 Or if you want to, you can nest your templates in submodules:
 
-```typescript
+```javascript
 module Template.AppViews {
   
   export function listView(id:string = "my_list", attrs?:any={}): string {
