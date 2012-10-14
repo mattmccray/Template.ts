@@ -1,4 +1,5 @@
-# can't use tag 'var' for obvious reasons...
+# Usage:
+# bash etc/build_tags.sh > src/template_tags.ts
 
 module_name="Template"
 
