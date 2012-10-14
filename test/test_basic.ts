@@ -29,10 +29,9 @@ module Template {
       );
     }
 
-    export function custom_widget(...children:string[]):string {
-      return tag('widget', [{ cls:'widget' },
-        children.join('')
-      ]);
+    export function custom_widget(...children:any[]):string {
+      children.unshift({ cls:'widget' })
+      return tag('widget', children);
     }
 
     export function my_widget():string {

@@ -52,3 +52,16 @@ var disconnected_widget = Template.Deeper.my_other_widget;
 print( disconnected_widget() )
 // => <widget class="widget"><p>widget content</p></widget>
 
+
+
+// == SECTION Helpers
+
+print( Template.image('test.gif') )
+// => <img src="test.gif"/>
+
+print( Template.image('test.gif', { cls:'avatar' }) )
+// => <img class="avatar" src="test.gif"/>
+
+print( Template.stylesheet('test.css') )
+// => <link src="test.css" rel="stylesheet" type="text/css"/>
+

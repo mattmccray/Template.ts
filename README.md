@@ -57,7 +57,7 @@ module Template.AppViews {
   }
 
   export function listItem(label:string, attrs?:any={}):string {
-    atts.cls = 'list-item'
+    attrs.cls = 'list-item'
     return li(attrs,
       div({ cls:'label' }, label)
     );

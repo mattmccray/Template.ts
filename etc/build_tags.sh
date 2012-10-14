@@ -13,13 +13,15 @@ echo "// This file is generated (from etc/build_tags.sh)
 
 module $module_name {
 
+  var makeArray = Array.prototype.slice;
+
 // Full Tags:"
 
 for tag in $full_tags
 do
 echo "
   export function $tag():string {
-    return tag('$tag', Array.prototype.slice.call(arguments));
+    return tag('$tag', makeArray.call(arguments));
   }"
 done
 

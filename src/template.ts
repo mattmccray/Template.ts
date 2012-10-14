@@ -3,7 +3,7 @@
 
 module Template {
 
-  export var VERSION:string = "1.0.1"
+  export var VERSION:string = "1.1.2"
   
   export var attrHooks:any = {
     "classname": "class",
