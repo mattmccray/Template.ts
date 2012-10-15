@@ -83,15 +83,15 @@ module Template.AppViews {
 
 ## Customize the module name
 
-If you don't like the `Template` module name, or you want to put it in your own namespace you can use the `etc/remodulerize.sh` tool:
+If you don't like the `Template` module name, or you want to put it in your own namespace you can use the `etc/gen_source.sh` tool:
 
 ```bash
-sh etc/remodulerize.sh App.Views
+sh etc/gen_source.sh App.Views
 ```
 
-Given that example, it would create two files: `app_views.ts`, `app_views.d.ts`, and compiles to `app_views.js`. It changes the source from using `module Template` to using `module App.Views`.
+Given that example, it would create a new source file: `app_views.ts`. It changes the source from using `module Template` to using `module App.Views`.
 
-You can then include the js directly on your page and reference the declaration file in your source files, or just reference the `app_views.ts` directly in your sources files.
+You can then include the source in your project and use/customize to your heart's content.
 
 
 ### Why you might want to do this
@@ -99,6 +99,8 @@ You can then include the js directly on your page and reference the declaration 
 It can be handy if you're building a Backbone app and want to inline the html building in the View. If you remodulerize to `App.Views`, you can then do this:
 
 ```javascript
+/// <reference path="path/to/app_views.ts"/>
+//   ^ Assumes you've run `sh etc/gen_source.sh App.Views`
 module App.Views {
   export class UserView extends Backbone.View {
     render() {

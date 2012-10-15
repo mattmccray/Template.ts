@@ -1,7 +1,7 @@
 // template.ts 1.1.3 <https://github.com/darthapo/template.ts>
 module Template {
 
-  export var VERSION:string = "1.1.3"
+  export var VERSION:string = "1.2.4"
   
   export var attrHooks:any = {
     "classname": "class",
@@ -37,15 +37,33 @@ module Template {
     return children.join('');
   }
   
-  // TODO: Make children an array if it's not...
-  export function tag(name, children:any[]=[]):string {
+  export function tag(name:string, children:any[]=[]):string {
     var atts= (children.length > 0 && typeof children[0] == 'object') ? toAttrs(children.shift()) : "";
     return "<"+ name + atts +">"+ children.join('') +"</"+ name +">";
   }
 
   // Children are swallowed up!
-  export function shortTag(name, atts?:any= {}):string {
+  export function shortTag(name:string, atts?:any= {}):string {
     return "<"+ name + toAttrs(atts) +"/>";
   }
+
+  // Tag Helpers:
+  export function image(src:string, attrs?:any= {}):string {
+    return shortTag('img', merge(attrs, {
+      src: src
+    }));
+  }
+
+  export function stylesheet(src:string, attrs?:any={}):string {
+    return shortTag('link', merge(attrs, {
+      src: src,
+      rel: "stylesheet",
+      type: "text/css"
+    }));
+  }
+
+  var makeArray = Array.prototype.slice;
+
+//> TAGS INCLUDED HERE
 
 }
